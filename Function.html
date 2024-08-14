@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script> 
+        //ArrowFunction
+        const a=( ) =>{
+            return 2+a;
+       }
+        //document.getElementById("demo").innerHTML=a();
+        //NormalFunction
+        function sum(a,b)
+        {
+            if(typeof(a)=="number" && typeof(b)=="number"){
+                return a+b;
+            }
+            else
+            {
+                return "please input number  values as argument";
+
+
+            }
+            
+        }
+        document.getElementById("demo2").innerHTML=(sum(10,"a"));
+    </script>
+</body>
+</html>

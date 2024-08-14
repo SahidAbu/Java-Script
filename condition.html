@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="xyz"></p>
+    <script>
+        let time=new Date().getHours();
+        document.getElementById("xyz").innerHTML=time;
+
+        if(time<=12){
+            document.getElementById("xyz").innerHTML="MORNING";   
+        }
+        else if(time<=6 || time>12){
+            document.getElementById("xyz").innerHTML="Afternoon";
+        }
+        else{
+            document.getElementById("xyz").innerHTML="Night";
+        }
+        
+        
+    </script>
+</body>
+</html>
